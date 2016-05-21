@@ -1,0 +1,12 @@
+<package format="2">
+  <name>rapp-elektron-cupholder</name>
+  <version>0.1.0</version>
+  <description>Elektron cupholder</description>
+  <maintainer email="akkenoth@gmail.com">Akkenoth</maintainer>
+  <maintainer email="ram.techen@gmail.com">Ram.techen</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <build_depend>rapp-robots-api</build_depend>
+</package>
