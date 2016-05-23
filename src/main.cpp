@@ -21,11 +21,9 @@ int main(int argc, char * argv[]) {
 	picture = vis.capture_image(4, camera_resolution::vga, "jpg");
 
 	// convert captured image to OpenCV format
-	cv::Mat img, img2;
+	cv::Mat img;
 	img = cv::imdecode(picture->bytearray(), CV_LOAD_IMAGE_ANYDEPTH|CV_LOAD_IMAGE_ANYCOLOR);
-	// cv::cvtColor(img, img2, CV_RGB2GRAY);
 
-	// cv::convertScaleAbs(img, img, 16.0, 0.0);
 	cv::imwrite("test.jpg", img);
 	cv::namedWindow("testImg", CV_WINDOW_AUTOSIZE);
 	cv::imshow("testImg", img);
